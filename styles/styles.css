@@ -1,0 +1,407 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: rgb(77, 77, 77);
+    overflow-x: hidden;
+   
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    overflow-x:hidden;
+}
+
+
+
+
+
+/*Hero section*/
+
+#hero{
+    height: 100vh;
+    position: relative;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+    text-align: center;
+    margin-top: -4px;
+}
+.bg__video {
+    height: 100vh;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw;
+}
+.hero-content{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.shade{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    background-color: rgba(12, 15, 29, 0.459);
+}
+.navbar{
+    height: 8rem; 
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+.navbar-pos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+}
+.nav__list a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 1rem;
+}
+.hover-border{
+    border-bottom: 2px solid #2a3fff;
+    transition: opacity 0.3s ease-in;
+}
+.textbox{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    
+}
+.textbox__main{
+    color: #ffffff;
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: left;
+}
+.textbox__sub{
+    color: #ffffff;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.pause{
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    width: 100px;
+    margin-top: 10px;
+}
+.pause:focus{
+    outline: none;
+}
+
+
+
+
+/*About section*/
+
+#skills{
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+.read-more{
+    padding: 10px 25px;
+    background-color: #1e277e;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    color: #fff;
+}
+.read-more:hover{
+    background-color: #6171ff;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    border: 3px solid #1e277e;
+    width: 300px;
+    height: 300px;
+}
+.icon{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-text{
+    height: 80%;
+    
+    text-align: center;
+    padding: 20px;
+}
+.center-icon{
+    height: 70px;
+    display: flex;
+    j
+}
+
+
+
+
+/*Projects*/
+
+.popup{
+    display: none;
+    background-color: #aaaaaa34;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;  
+}
+.modal{
+    height: 400px;
+    width: 800px;
+    background-color: #3a3a3a;
+    display: none;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    width: 50%;
+    height: 100%;
+}
+.image1{
+    background-image: url(../img/Relaxe.png);
+    background-size: cover;
+    background-position: center;
+}
+.text{
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#prev-work{
+    height: 700px;
+    background-color: rgb(6, 25, 49);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.project{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    border-radius: 6px;
+}
+.project:hover .layer1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(59, 59, 59, 0.596);;
+}
+.project__relaxe{
+    background:linear-gradient( rgba(150, 150, 150, 0.5), rgb(150, 150, 150,0.5)), url(../img/Relaxe.png) no-repeat center center;
+    background-size: cover;
+}
+.project__natours{
+    background: url(../img/natourspre.png) no-repeat center center;
+    background-size: cover;
+}
+.project__form{
+    background: url(../img/form.png) no-repeat center center;
+    background-size: cover;
+}
+.project__webdesign{
+    background: url(../img/webdesign.png) no-repeat center center;
+    background-size: cover;
+}
+.project__parallex{
+    background: url(../img/parallax.png) no-repeat center center;
+    background-size: cover;
+}
+.project__bakker{
+    background:url(../img/bakker.png) no-repeat center center;
+    background-size: cover;
+}
+.layer1{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}   
+.layer1:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(59, 59, 59, 0.596);
+}
+
+
+
+
+
+
+
+/*Contact section*/
+
+#contact{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.copyright{
+    
+    
+    position: absolute;
+    left: 7.5%;
+    bottom: 3px;
+}
+.contact-box{
+    display: flex;
+    height: 60%;
+}
+.contact-text{
+    width: 50%;
+    padding-top: 10px;
+}
+.contact-img{
+    width: 50%;
+    background: url(../img/location.png);
+    background-size: cover;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.contactbar{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: flex-end;
+    
+}
+.contactbar div{
+    height: 50px;
+    width: 50px;
+    background-color: lightsteelblue;
+    margin-right: 10px;
+    transition: .2s ease-in;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contactbar div:hover{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/*Media querys */
+
+@media screen and (max-width:1040px){
+
+    .about{
+        display: block;
+    }
+    .navbar-pos{
+        justify-content: center ;
+    }
+    .navbar-pos img{
+        display: none;
+    }
+    .nav__list a{
+        margin-left: 20px;
+        padding: 0;
+    }
+    .navbar{
+        height: 60px;
+        border-bottom: none;
+    }
+    .about-image{
+        display: none;
+    }
+    #skills{
+        height: 1000px;
+    }
+    .about{
+        display: block;
+
+    }
+    .card{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    #prev-work{
+        height: 1200px;
+    }
+    #contact{
+        height: 900px;
+    }
+    .contact-box{
+        display: block;
+        justify-content: center;
+        height: 100%;
+    }
+    .contact-text{
+        height: 400px;
+        width: 100%;
+    }
+    .contact-img{
+        width: 100%;
+        height: 400px;
+    }
+
+}
